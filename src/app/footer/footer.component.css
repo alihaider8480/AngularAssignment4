@@ -1,0 +1,17 @@
+footer{
+  position: fixed;
+  bottom: 0;           /*  matlab botam sa pora chupka wa ho chaeye zoom bhi karlo  */
+  left: 0;
+  right: 0;
+  background: rgb(253, 0, 0);
+  height: 45px;
+  width: 100vw;
+  padding-top: 1px;
+  padding-bottom: 2px;
+  color: #fff;
+}
+
+.footer_h1{
+  text-align: center;
+  color: black;
+}

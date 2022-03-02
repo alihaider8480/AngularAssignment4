@@ -1,0 +1,26 @@
+<div style="background-color: beige;">
+      <div id="loginID">
+        <label for="fname">Product Name : </label>
+        <input [(ngModel)]="ngproductname" type="text" ><br><br>
+        <label for="lname">Quantiy Name: </label>
+        <input [(ngModel)]="ngquantity" type="text" name="lname"><br><br>
+        <button id="div_button" (click)="submitProduct()">Submit</button>
+      </div>
+<h1>{{cc}}</h1>
+      <input id="searchProductField" type="text" (input)="searchPro($event)" placeholder="Search Product Name">
+      <br>
+
+      <table id="productTable">
+        <h3>{{totalCountServiceData}}</h3>
+        <tr>
+          <th class="th-text">Name</th>
+          <th class="th-text">Quantity</th>
+        </tr>
+        <tr *ngFor="let products of SecondProcutList;">
+          <td>{{products.name | uppercase}}</td>
+          <td>{{products.quantity}}</td>
+          <!-- <td><button (click)="editPopUp(products.name,products.quantity)">Edit</button></td> -->
+        </tr>
+      </table>
+      <br>
+</div>
